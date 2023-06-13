@@ -60,7 +60,6 @@ const Partner = () => {
         <div className="absolute w-full h-full bg-merryblue-600/70 rounded-xl"></div>
       </section>
       <section className={isAddingFood ? "block" : "hidden"}>
-        {" "}
         <div className="mx-auto mt-32 max-w-[500px] rounded-md bg-slate-300 py-10 px-6 sm:p-[60px]">
           <h3 className="mb-24 text-center text-2xl font-bold sm:text-3xl">
             Add Food

@@ -61,8 +61,8 @@ const Sidebar = ({ name, role }) => {
   const navigate = useNavigate();
 
   const handleLogout = () => {
-    localStorage.removeItem("jwtToken");
-    localStorage.removeItem("userName");
+    localStorage.removeItem("token");
+    localStorage.removeItem("name");
     localStorage.removeItem("role");
     return navigate("/");
   };
@@ -73,7 +73,7 @@ const Sidebar = ({ name, role }) => {
         <p className="text-2xl font-semibold">{name}</p>
         <p className="text-sm font-semibold uppercase">{role}</p>
       </div>
-      {role === "User" && <MemberSidebar />}
+      {role === "USER" && <MemberSidebar />}
       {role === "Partner" && <PartnerSidebar />}
       <button
         className="bg-merrypink-600 text-white h-10"
